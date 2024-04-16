@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      function largestnum()
+      {
+        var num1=prompt("enter the first value")//2
+        var num2=prompt("enter the second value")//3
+
+        var num3=prompt("enter the third value")//4
+        if((num1>num2) && (num1>num3))//2>3=f && 2>4=f
+        {
+            alert("num1 is large"+num1)
+        }
+        else if((num2>num3) &&(num2>num1))//3>4=f  3>2=t
+        {
+            alert("num2 is large"+num2)
+        }
+        else{
+            alert("num3 is large"+num3)//4
+        }
+
+      }
+    </script>
+</head>
+<body>
+    <button type="button" onclick="largestnum()">click</button>
+</body>
+</html>
